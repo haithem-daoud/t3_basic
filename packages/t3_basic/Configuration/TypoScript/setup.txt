@@ -1,0 +1,3 @@
+# BASE SETUP
+@import 'EXT:t3_basic/Configuration/TypoScript/CORE/setup.txt'
+@import 'EXT:t3_basic/Configuration/TypoScript/Extensions/seo/setup.txt'
