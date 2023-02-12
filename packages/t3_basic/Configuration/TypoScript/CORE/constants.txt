@@ -1,6 +1,0 @@
-##################
-# GLOBAL VARIABLES
-##################
-global {
-    rootUID = 1
-}

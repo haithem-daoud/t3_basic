@@ -1,6 +1,0 @@
-TCEFORM {
-    pages {
-        backend_layout_next_level.removeItems = -1
-        backend_layout.removeItems = -1
-    }
-}

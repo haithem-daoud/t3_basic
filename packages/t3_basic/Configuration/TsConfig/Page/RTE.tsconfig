@@ -1,5 +1,0 @@
-RTE {
-    default {
-        preset = t3_basic
-    }
-}
