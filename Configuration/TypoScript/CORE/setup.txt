@@ -1,0 +1,150 @@
+########
+# CONFIG
+########
+config {
+    # GENERAL
+    additionalHeaders = Content-Type:text/html;charset=utf-8
+    metaCharset = utf-8
+    doctype = html5
+    xhtml_cleaning = all
+    xmlprologue = none
+    disablePrefixComment = 1
+    disableImgBorderAttr = 1
+    meaningfulTempFilePrefix = 50
+    ATagParams =
+    noPageTitle = 1
+    typolinkCheckRootline = 1
+
+    # TYPO3 CORE Compressor
+    concatenateJs = 1
+    concatenateCss = 1
+    compressJs = 1
+    compressCss = 1
+
+    # LANGUAGE
+    sys_language_uid = 0
+    language = de
+    locale_all = en_EN.utf8
+    htmlTag_langKey = en
+    htmlTag_setParams = lang="en-EN"
+
+    # PAGE TITLE PROVIDER
+    pageTitleProviders {
+        sitepackage {
+            provider = TYPO3\T3Basic\PageTitle\PageTitleProvider
+            after = seo
+            before = record
+        }
+    }
+}
+
+######################
+# FETCH CURRENT DOMAIN
+######################
+lib.currentDomain = TEXT
+lib.currentDomain {
+    dataWrap = {getIndpEnv:TYPO3_REQUEST_HOST}|
+    typolink.parameter.current = 1
+    typolink.returnLast = url
+}
+
+###################
+# DISPLAY MAIN MENU
+###################
+lib.template {
+    dataProcessing.100 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    dataProcessing.100 {
+        special = directory
+        special.value = {$global.rootUID}
+        levels = 1
+        as = menu
+        titleField = nav_title
+        #    excludeUidList = 2
+    }
+}
+
+#######################
+# DISPLAY MENU LANGUAGE
+#######################
+lib.template {
+    dataProcessing.200 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+    dataProcessing.200 {
+        languages = auto
+        as = menulanguage
+    }
+}
+
+lib.contentElement {
+    layoutRootPaths {
+        0 = EXT:t3_basic/Resources/Private/Templates/CORE/fluid_styled_content/Layouts
+    }
+    partialRootPaths {
+        0 = EXT:t3_basic/Resources/Private/Templates/CORE/fluid_styled_content/Partials
+    }
+    templateRootPaths {
+        0 = EXT:t3_basic/Resources/Private/Templates/CORE/fluid_styled_content/Templates
+    }
+}
+
+lib.template = FLUIDTEMPLATE
+lib.template {
+    partialRootPath = EXT:t3_basic/Resources/Private/Partials/
+    layoutRootPath = EXT:t3_basic/Resources/Private/Templates/
+    file.stdWrap.cObject = CASE
+    file.stdWrap.cObject {
+        key.data = levelfield:-1, backend_layout_next_level, slide
+        key.override.field = backend_layout
+        default = TEXT
+        default.value = EXT:t3_basic/Resources/Private/Templates/default.html
+    }
+    variables {
+        zero = COA
+        zero {
+            20 < styles.content.get
+            20.select.where = {#colPos}=0
+            20.select.languageField = sys_language_uid
+        }
+        one = COA
+        one {
+            30 < styles.content.get
+            30.select.where = {#colPos}=1
+            30.select.languageField = sys_language_uid
+        }
+    }
+}
+
+page = PAGE
+page {
+    typeNum = 0
+    config {
+        no_cache = 0
+        sendCacheHeaders = 1
+        cache_period = 86400
+        cache_clearAtMidnight = 1
+    }
+    10 < lib.template
+}
+
+################
+# CSS | JS FILES
+################
+page {
+    shortcutIcon = EXT:t3_basic/Resources/Public/img/favicon.ico
+
+    includeCSS {
+        style = EXT:t3_basic/Resources/Public/css/style.css
+        style {
+            media = all
+            excludeFromConcatenation = 0
+            disableCompression = 0
+        }
+    }
+    includeJSFooter {
+        script = EXT:t3_basic/Resources/Public/js/script.js
+        script {
+            media = all
+            excludeFromConcatenation = 0
+            disableCompression = 0
+        }
+    }
+}

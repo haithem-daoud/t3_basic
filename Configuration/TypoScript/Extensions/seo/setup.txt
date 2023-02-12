@@ -1,0 +1,32 @@
+plugin.tx_seo {
+    config {
+        xmlSitemap {
+            sitemaps {
+                news {
+                    provider = TYPO3\CMS\Seo\XmlSitemap\RecordsXmlSitemapDataProvider
+                    config {
+                        table = tx_news_domain_model_news
+                        additionalWhere =
+                        sortField = sorting
+                        lastModifiedField = tstamp
+                        changeFreqField = sitemap_changefreq
+                        priorityField = sitemap_priority
+                        pid = 14
+                        recursive = 2
+                        url {
+                            pageId = 25
+                            fieldToParameterMap {
+                                uid = tx_news_pi1[news]
+                            }
+
+                            additionalGetParameters {
+                                tx_news_pi1.controller = News
+                                tx_news_pi1.action = detail
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
