@@ -1,0 +1,26 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          1000: EXT:t3_basic/Resources/Private/Forms
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  100: "EXT:t3_basic/Resources/Private/Templates/CORE/Forms/"
+                partialRootPaths:
+                  100: "EXT:t3_basic/Resources/Private/Partials/CORE/Forms/"
+                translation:
+                  translationFiles:
+                    10: 'EXT:form/Resources/Private/Language/locallang.xlf'
+                    20: 'EXT:t3_basic/Resources/Private/Language/form/locallang.xlf'
+          formEditor:
+            translationFile:
+              10: "EXT:form/Resources/Private/Language/Database.xlf"
+              20: "EXT:t3_basic/Resources/Private/Language/form/locallang.xlf"

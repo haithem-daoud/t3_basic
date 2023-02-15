@@ -1,1 +1,2 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_basic/Configuration/TypoScript/CORE/constants.txt">
+@import 'EXT:t3_basic/Configuration/TypoScript/Extensions/form/constants.txt'
