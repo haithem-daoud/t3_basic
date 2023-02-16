@@ -1,5 +1,11 @@
 # BASE SETUP
 @import 'EXT:t3_basic/Configuration/TypoScript/CORE/setup.txt'
+
+# TER EXTENSIONS
 @import 'EXT:t3_basic/Configuration/TypoScript/Extensions/seo/setup.txt'
 @import 'EXT:t3_basic/Configuration/TypoScript/Extensions/form/setup.txt'
 @import 'EXT:t3_basic/Configuration/TypoScript/Extensions/indexedsearch/setup.txt'
+@import 'EXT:t3_basic/Configuration/TypoScript/Extensions/kesearch/setup.txt'
+
+# CUSTOM PLUGINS CONFIG
+@import 'EXT:t3_basic/Configuration/TypoScript/Extensions/person/setup.txt'

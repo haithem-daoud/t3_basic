@@ -1,0 +1,5 @@
+plugin.tx_kesearch {
+    templateRootPath = EXT:t3_basic/Resources/Private/Templates/CORE/ke_search/
+    partialRootPath = EXT:t3_basic/Resources/Private/Partials/CORE/ke_search/
+    layoutRootPath = EXT:t3_basic/Resources/Private/Layouts/CORE/ke_search/
+}

@@ -1,0 +1,12 @@
+plugin.tx_t3basic_person {
+    persistence {
+        storagePid = 16
+    }
+
+    settings {
+        crop {
+            enable = 1
+            maxCharacters = 50
+        }
+    }
+}

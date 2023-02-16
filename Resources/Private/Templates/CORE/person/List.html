@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:comment>
+    This Template is responsible for creating a list of persons.
+</f:comment>
+
+    <f:for each="{persons}" as="person" iteration="iterator">
+        <h3><a href="{f:uri.action(action: 'show', arguments: {person: person})}">{person.firstname}{person.lastname}</a></h3>
+
+        <f:if condition="{person.shortBiography}">
+            <f:if condition="{settings.crop.enable}">
+                <f:then>
+                    {person.shortBiography -> f:format.crop(maxCharacters: settings.crop.maxCharacters, append: '…', respectHtml: 1) -> f:format.html()}
+                </f:then>
+                <f:else>
+                    {person.shortBiography -> f:format.html()}
+                </f:else>
+            </f:if>
+        </f:if>
+
+        <!-- RENDER : TT_CONTENT ELEMENTS -->
+        <f:if condition="{person.contentElements}">
+            <f:cObject typoscriptObjectPath="lib.tx_t3basic_person.contentElementRendering">{person.contentElementIdList}</f:cObject>
+        </f:if>
+    </f:for>
+</html>

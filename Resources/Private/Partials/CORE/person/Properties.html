@@ -1,0 +1,144 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-persons">
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.global_id"/>
+        </td>
+        <td>
+            {person.globalId}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.gender"/>
+        </td>
+        <td>
+            {person.gender}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.title"/>
+        </td>
+        <td>
+            {person.title}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.first_name"/>
+        </td>
+        <td>
+            {person.firstName}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.last_name"/>
+        </td>
+        <td>
+            {person.lastName}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.position"/>
+        </td>
+        <td>
+            {person.position}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.address"/>
+        </td>
+        <td>
+            {person.address}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.zip"/>
+        </td>
+        <td>
+            {person.zip}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.city"/>
+        </td>
+        <td>
+            {person.city}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.phone"/>
+        </td>
+        <td>
+            {person.phone}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.fax"/>
+        </td>
+        <td>
+            {person.fax}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.email"/>
+        </td>
+        <td>
+            {person.email}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.www"/>
+        </td>
+        <td>
+            {person.www}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.biography"/>
+        </td>
+        <td>
+            <f:format.raw>{person.biography}</f:format.raw>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.shortBiography"/>
+        </td>
+        <td>
+            <f:format.raw>{person.shortBiography}</f:format.raw>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.categories"/>
+        </td>
+        <td>
+            <f:for each="{person.categories}" as="category">
+                {category.title}
+            </f:for>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_t3_basic_domain_model_person.image"/>
+        </td>
+        <td>
+            <f:if condition="{person.image}>">
+                <f:image src="{person.image.originalResource.publicUrl}" width="200c"/>
+            </f:if>
+        </td>
+    </tr>
+</table>
+</html>

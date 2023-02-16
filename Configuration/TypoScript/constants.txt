@@ -1,3 +1,10 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3_basic/Configuration/TypoScript/CORE/constants.txt">
+# BASE SETUP
+@import 'EXT:t3_basic/Configuration/TypoScript/CORE/constants.txt'
+
+# TER EXTENSIONS
 @import 'EXT:t3_basic/Configuration/TypoScript/Extensions/form/constants.txt'
 @import 'EXT:t3_basic/Configuration/TypoScript/Extensions/indexedsearch/constants.txt'
+@import 'EXT:t3_basic/Configuration/TypoScript/Extensions/kesearch/setup.txt'
+
+# CUSTOM PLUGINS CONFIG
+@import 'EXT:t3_basic/Configuration/TypoScript/Extensions/person/constants.txt'

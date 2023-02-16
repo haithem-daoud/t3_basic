@@ -1,0 +1,39 @@
+plugin.tx_t3basic_person {
+    view {
+        templateRootPaths.0 = EXT:t3_basic/Resources/Private/Templates/CORE/person/
+        partialRootPaths.0 = EXT:t3_basic/Resources/Private/Partials/CORE/person/
+        layoutRootPaths.0 = EXT:t3_basic/Resources/Private/Layouts/CORE/person/
+    }
+#    widget {
+#        templateRootPath = EXT:t3_basic/Resources/Private/Templates/
+#    }
+    persistence {
+        storagePid = {$plugin.tx_t3basic_person.persistence.storagePid}
+        # recursive = 1
+    }
+    features {
+        # skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+    settings {
+        crop {
+            enable = {$plugin.tx_t3basic_person.settings.crop.enable}
+            maxCharacters = {$plugin.tx_t3basic_person.settings.crop.maxCharacters}
+        }
+    }
+}
+
+# Rendering of content elements in detail view
+lib.tx_t3basic_person.contentElementRendering = RECORDS
+lib.tx_t3basic_person.contentElementRendering {
+    tables = tt_content
+    source.current = 1
+    dontCheckPid = 1
+}
+

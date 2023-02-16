@@ -6,6 +6,99 @@
             <authorEmail></authorEmail>
         </header>
         <body>
+        <trans-unit id="flexforms_general.ascending">
+            <source>ascending</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.backPage">
+            <source>Back Page</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.cache.makeNonCacheable">
+            <source>Don't cache plugin contents</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.categories">
+            <source>Categories</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.conjunction">
+            <source>Categories Conjunction</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.conjunction.and">
+            <source>And</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.conjunction.or">
+            <source>Or</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.constraintBy">
+            <source>constraint by</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.constraints">
+            <source>Constraints</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.descending">
+            <source>descending</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.detailPage">
+            <source>Detail Page</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.firstNameASC">
+            <source>First Name (ASC)</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.lastNameASC">
+            <source>Last Name (ASC)</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.listPage">
+            <source>List Page</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.maxItems">
+            <source>MaxItems</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.mode">
+            <source>Action</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.mode.personFilter">
+            <source>Filter</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.mode.personListShow">
+            <source>List/Detail</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.mode.personShow">
+            <source>Detail</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.mode.personShowSelected">
+            <source>Selected Persons</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.order">
+            <source>Order by</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.pages">
+            <source>Pages</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.pluginNamespace">
+            <source>Plugin Namespace</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.selected.categories">
+            <source>Selected Departements</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.selectedPersons">
+            <source>Selected Persons</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.start">
+            <source>Start</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.title">
+            <source>Title</source>
+        </trans-unit>
+        <trans-unit id="flexforms_general.visible.categories">
+            <source>Categories Visible</source>
+        </trans-unit>
+        <trans-unit id="flexforms_tab.settings">
+            <source>Settings</source>
+        </trans-unit>
+        <trans-unit id="plugin.persons.description">
+            <source>Displays persons.</source>
+        </trans-unit>
+        <trans-unit id="plugin.persons.title">
+            <source>Persons</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

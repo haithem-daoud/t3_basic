@@ -6,6 +6,78 @@
             <authorEmail></authorEmail>
         </header>
         <body>
+        <trans-unit id="tab.additionalFields">
+            <source>Extended</source>
+        </trans-unit>
+        <trans-unit id="tab.additionalImages">
+            <source>Additional Images</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person">
+            <source>Person</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.gender">
+            <source>Gender</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.content_elements">
+            <source>Content Elements</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.gender.male">
+            <source>Mr</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.gender.female">
+            <source>Ms</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.title">
+            <source>Title</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.first_name">
+            <source>First Name</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.last_name">
+            <source>Last Name</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.position">
+            <source>Position</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.address">
+            <source>Address</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.zip">
+            <source>Zip</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.city">
+            <source>City</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.phone">
+            <source>Phone</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.fax">
+            <source>Fax</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.email">
+            <source>Email</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.www">
+            <source>WWW</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.short_biography">
+            <source>Short Biography</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.biography">
+            <source>Biography</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.image">
+            <source>Image</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.additional_images">
+            <source>Additional Images</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.categories">
+            <source>Categories</source>
+        </trans-unit>
+        <trans-unit id="tx_t3_basic_domain_model_person.course">
+            <source>Course</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

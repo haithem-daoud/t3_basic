@@ -1,0 +1,15 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+    elements {
+        person {
+            iconIdentifier = t3basic-persons
+            title = LLL:EXT:t3_basic/Resources/Private/Language/locallang_be.xlf:plugin.persons.title
+            description = LLL:EXT:t3_basic/Resources/Private/Language/locallang_be.xlf:plugin.persons.description
+            tt_content_defValues {
+                CType = list
+                list_type = t3basic_person
+            }
+        }
+    }
+
+    show := addToList(t3basic_person)
+}

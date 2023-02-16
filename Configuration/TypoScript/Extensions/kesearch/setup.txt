@@ -1,0 +1,24 @@
+@import 'EXT:ke_search/Configuration/TypoScript/setup.typoscript'
+
+# paths for fluid templating
+plugin.tx_kesearch_pi1 {
+    view {
+        templateRootPaths {
+            0 = EXT:ke_search/Resources/Private/Templates/
+            1 = {$plugin.tx_kesearch.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:ke_search/Resources/Private/Partials/
+            1 = {$plugin.tx_kesearch.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:ke_search/Resources/Private/Layouts/
+            1 = {$plugin.tx_kesearch.layoutRootPath}
+        }
+    }
+#    cssFile = EXT:ke_search/Resources/Public/Css/ke_search_pi1.css
+
+#    additionalAllowedPiVars =
+
+#    searchWordParameter = tx_kesearch_pi1[sword]
+}
