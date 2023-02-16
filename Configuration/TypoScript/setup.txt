@@ -2,3 +2,4 @@
 @import 'EXT:t3_basic/Configuration/TypoScript/CORE/setup.txt'
 @import 'EXT:t3_basic/Configuration/TypoScript/Extensions/seo/setup.txt'
 @import 'EXT:t3_basic/Configuration/TypoScript/Extensions/form/setup.txt'
+@import 'EXT:t3_basic/Configuration/TypoScript/Extensions/indexedsearch/setup.txt'

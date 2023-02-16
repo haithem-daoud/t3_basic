@@ -1,0 +1,12 @@
+########################
+#### INDEXED SEARCH ####
+########################
+@import 'EXT:indexed_search/onfiguration/TypoScript/constants.typoscript'
+
+plugin.tx_indexedsearch {
+    view {
+        templateRootPath = EXT:t3_basic/Resources/Private/Templates/CORE/indexed_search/
+        partialRootPath = EXT:t3_basic/Resources/Private/Partials/CORE/indexed_search/
+        layoutRootPath = EXT:t3_basic/Resources/Private/Layouts/CORE/indexed_search/
+    }
+}

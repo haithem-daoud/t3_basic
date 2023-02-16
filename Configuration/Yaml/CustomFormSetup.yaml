@@ -13,9 +13,9 @@ TYPO3:
             Form:
               renderingOptions:
                 templateRootPaths:
-                  100: "EXT:t3_basic/Resources/Private/Templates/CORE/Forms/"
+                  100: "EXT:t3_basic/Resources/Private/Templates/CORE/form/"
                 partialRootPaths:
-                  100: "EXT:t3_basic/Resources/Private/Partials/CORE/Forms/"
+                  100: "EXT:t3_basic/Resources/Private/Partials/CORE/form/"
                 translation:
                   translationFiles:
                     10: 'EXT:form/Resources/Private/Language/locallang.xlf'
