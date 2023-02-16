@@ -1,0 +1,114 @@
+{
+    "version": "7.2.0",
+    "tables": {
+        "pages": {
+            "elements": {
+            },
+            "sql": {
+            },
+            "tca": {
+            }
+        },
+        "sys_file_reference": {
+            "sql": {
+                "tx_mask_image": {
+                    "sys_file_reference": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            }
+        },
+        "tt_content": {
+            "elements": {
+                "slider": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "tx_mask_name",
+                        "tx_mask_bodytextplain",
+                        "tx_mask_image"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "fa-sliders",
+                    "iconOverlay": "",
+                    "key": "slider",
+                    "label": "Slider",
+                    "labels": [
+                        "Header",
+                        "Text",
+                        "Image"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                }
+            },
+            "sql": {
+                "tx_mask_bodytextplain": {
+                    "tt_content": {
+                        "tx_mask_bodytextplain": "mediumtext"
+                    }
+                },
+                "tx_mask_name": {
+                    "tt_content": {
+                        "tx_mask_name": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_image": {
+                    "tt_content": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_bodytextplain": {
+                    "config": {
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_bodytextplain",
+                    "key": "bodytextplain",
+                    "type": "text"
+                },
+                "tx_mask_name": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_name",
+                    "key": "name",
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "allowedFileExtensions": "jpeg,jpg,png",
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "expandSingle": 1,
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "1",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "key": "image",
+                    "type": "file"
+                }
+            }
+        }
+    }
+}

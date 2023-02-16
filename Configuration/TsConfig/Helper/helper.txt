@@ -1,0 +1,7 @@
+options {
+    pageTree {
+        backgroundColor {
+            1 = #d03f38
+        }
+    }
+}

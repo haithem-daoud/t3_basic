@@ -1,0 +1,18 @@
+<section>
+    <a id="c{data.uid}"></a>
+    <f:if condition="{data.tx_mask_name}">
+        {data.tx_mask_name} <br>
+    </f:if>
+    <f:if condition="{data.tx_mask_bodytextplain}">
+        <f:if condition="{data.tx_mask_bodytextplain}">
+            {data.tx_mask_bodytextplain -> f:format.raw()} <br>
+        </f:if>
+    </f:if>
+    <f:if condition="{data.tx_mask_image}">
+        <picture>
+            <img src="{f:uri.image(image:'{data.tx_mask_image.0}',width:'150',height:'200')}"
+                 title="{f:if(condition:'{data.tx_mask_image.0.title}',then:'{data.tx_mask_image.0.title}')}"
+                 alt="{f:if(condition:'{data.tx_mask_image.0.alternative}',then:'{data.tx_mask_image.0.alternative}')}">
+        </picture>
+    </f:if>
+</section>
